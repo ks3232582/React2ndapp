@@ -35,7 +35,7 @@ cssStyle.color='green'
   cssStyle.color='Orange'
 }else{
   greeting='Good Night'
-  cssStyle.color='black'
+  cssStyle.color='grey'
 }
 
 
