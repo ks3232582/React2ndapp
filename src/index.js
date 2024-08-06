@@ -17,7 +17,7 @@ const App = () => {
     if (photo === initialPhoto) {
       setPhoto(alternatePhoto);
       setLinkText('I Love You Babu!');
-      setMyText('She is My World'); // Update text when image changes
+      setMyText('She is My World!'); // Update text when image changes
     } else {
       setPhoto(initialPhoto);
       setLinkText('Riya Singh ❤️');
@@ -45,12 +45,13 @@ const App = () => {
 
   return (
     <div>
-      <h1>{myText}<span style={cssStyle}> {greeting} </span></h1>
-      <img src={photo} alt="My Photo" style={{ width: '200px', height: 'auto' }} onClick={handleClick} />
+      <h1>{greeting}</h1>
+      <h2>{myText}<span style={cssStyle}> <br/> </span></h2><h1>Current Time: {new Date().toLocaleTimeString()}</h1>
+      {/* <img src={photo} alt="My Photo" style={{ width: '200px', height: 'auto' }} onClick={handleClick} /> */}
       <br />
-      <div>
+      
         See My World .. <a href="#" onClick={handleClick}>{linkText}</a>
-      </div>
+      
     </div>
   );
 };
